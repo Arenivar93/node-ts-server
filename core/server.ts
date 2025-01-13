@@ -13,6 +13,7 @@ class Server {
     constructor(){
         this.app = express();
         this.port = process.env.PORT || '3001';
+        this.app.use(express.json());
 
         this.middlewares();
         this.swagger();
@@ -23,6 +24,8 @@ class Server {
 
         // CORS
         this.app.use(cors());
+        
+        this.app.use(express.json());
 
         //Read body parser
         this.app.use( express.json() );

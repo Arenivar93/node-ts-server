@@ -19,6 +19,13 @@ export const addMySelf = (req: Request, res: Response) : any => {
 
     try {
         const {Name, FavoriteFood, FavoriteMovie, Status } = req.body;
+        
+
+        if(!Name || !FavoriteFood || !FavoriteMovie || !Status){
+            return res.status(401).json({
+                msg: 'Some properties are required'
+            })
+        }
 
         if(people.getList.some(a => a['Name'].toLowerCase() == Name.toLowerCase())){
             return res.status(409).json({

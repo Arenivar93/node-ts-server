@@ -1,5 +1,6 @@
 import swaggerJsdoc from 'swagger-jsdoc';
 
+const ulrApi=process.env.API || 'http://localhost:3001';
 
 const options = {
     definition: {
@@ -9,11 +10,11 @@ const options = {
             version: '1.0.0',
             description: 'A sample Express.js API built with TypeScript and Swagger',
         },
-        /*servers: [
+        servers: [
             {
-                url: 'http://localhost:3001',
+                url: ulrApi,
             },
-        ],*/
+        ],
     },
     apis: ['./routes/*.ts','./controllers/*.ts'],
 };

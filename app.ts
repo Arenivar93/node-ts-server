@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
-import Server from './core/server';
 dotenv.config();
+import Server from './core/server';
 
 const server = new Server();
 

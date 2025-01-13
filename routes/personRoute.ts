@@ -24,12 +24,11 @@ router.get('/', getList);
  *   post:
  *     summary: Add a new person.
  *     description: Adds a new person to the list with the provided information.
- *     parameters:
- *       - in: body
- *         name: person
- *         description: The person to be added.
- *         required: true
- *         schema:
+ *     requestBody:
+ *      required: true
+ *      content:
+ *        application/json:
+ *          schema:
  *           type: object
  *           properties:
  *             Name:
