@@ -1,0 +1,12 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled output
+dist/
+
+# Environment files
+.env
+
+# IDE/Editor directories
+.vscode/
+.idea/
