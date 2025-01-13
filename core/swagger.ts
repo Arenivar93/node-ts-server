@@ -10,11 +10,11 @@ const options = {
             version: '1.0.0',
             description: 'A sample Express.js API built with TypeScript and Swagger',
         },
-        servers: [
+        /*servers: [
             {
                 url: ulrApi,
             },
-        ],
+        ],*/
     },
     apis: ['./routes/*.ts','./controllers/*.ts'],
 };
