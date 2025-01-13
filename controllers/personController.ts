@@ -32,6 +32,8 @@ export const addMySelf = (req: Request, res: Response) : any => {
             msg: `The person named ${Name} has been successfully added`,
         })
     } catch (error) {
+        console.log(error);
+        
         res.status(500).json({
             msg: 'An unexpected error occurred',
         })
