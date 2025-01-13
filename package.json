@@ -2,8 +2,11 @@
   "name": "ts-restserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
+    "start": "tsc && node dist/app.js",
+    "build": "tsc --build tsconfig.json",
+    "build:watch": "tsc --build tsconfig.json --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
